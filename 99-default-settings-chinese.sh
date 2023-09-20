@@ -2,6 +2,7 @@
 
 sed -i 's/root::0:0:99999:7:::/root:$1$4xKZB45Q$w0CPT5M6vBWbYNmSWuxfU.:0:0:99999:7:::/g' /etc/shadow
 sed -i 's/root:::0:99999:7:::/root:$1$4xKZB45Q$w0CPT5M6vBWbYNmSWuxfU.:0:0:99999:7:::/g' /etc/shadow
+sed -i 's/ash/bash/g' /etc/passwd
 
 uci set luci.main.lang=zh_cn
 uci commit luci
