@@ -1,11 +1,9 @@
 #!/bin/sh
 
 # ttyd autologin
-uci batch <<EOF
-set ttyd.@ttyd[0].interface='@lan'
-EOF
+uci set ttyd.@ttyd[0].interface='@lan'
+#uci set ttyd.@ttyd[0].command='/bin/login -f root'
 uci commit ttyd
-#set ttyd.@ttyd[0].command='/bin/login -f root'
 
 # turboacc bbr_cca is on
 #uci set turboacc.config.bbr_cca='1'
