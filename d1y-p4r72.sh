@@ -27,6 +27,9 @@ sed -i 's/"终端"/"TTYD 终端"/g' feeds/luci/applications/luci-app-ttyd/po/zh_
 
 sed -i 's/START=18/START=99/g' feeds/packages/net/dnscrypt-proxy2/files/dnscrypt-proxy.init
 
+rm -rf feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/img
+wget --no-check-certificate -O feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/img "https://raw.githubusercontent.com/0xACE8/hyp3r-v_x64_u3f1/main/bg1.jpg"
+
 # install turboacc and patch
 #echo "install turboacc and patch for nftables"
 #ls
