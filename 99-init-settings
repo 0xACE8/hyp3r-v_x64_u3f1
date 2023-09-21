@@ -32,18 +32,18 @@ uci commit netspeedtest
 # uci commit luci
 
 # system
-# uci batch <<EOF
-# set system.@system[0].hostname='Bypass_Router'
-# set system.@system[0].timezone='PST8PDT,M3.2.0,M11.1.0'
-# set system.@system[0].zonename='America/Los Angeles'
-# delete system.ntp.enable_server
-# add_list system.ntp.server="cn.ntp.org.cn"
-# add_list system.ntp.server="edu.ntp.org.cn"
-# add_list system.ntp.server="ntp.ntsc.ac.cn"
-# add_list system.ntp.server="ntp.tuna.tsinghua.edu.cn"
-# set system.ntp.use_dhcp='0'
-# EOF
-# uci commit system
+uci batch <<EOF
+set system.@system[0].hostname='Bypass_Router'
+set system.@system[0].timezone='PST8PDT,M3.2.0,M11.1.0'
+set system.@system[0].zonename='America/Los Angeles'
+delete system.ntp.enable_server
+add_list system.ntp.server="cn.ntp.org.cn"
+add_list system.ntp.server="edu.ntp.org.cn"
+add_list system.ntp.server="ntp.ntsc.ac.cn"
+add_list system.ntp.server="ntp.tuna.tsinghua.edu.cn"
+set system.ntp.use_dhcp='0'
+EOF
+uci commit system
 
 sed -i "/ace8/d" /etc/opkg/distfeeds.conf
 sed -i "/passwall_packages/d" /etc/opkg/distfeeds.conf
