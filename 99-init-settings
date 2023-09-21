@@ -1,5 +1,18 @@
 #!/bin/sh
 
+# argon
+uci batch <<EOF
+set argon.@global[0].primary='#1c78ff'
+set argon.@global[0].dark_primary='#1c78ff'
+set argon.@global[0].blur='10'
+set argon.@global[0].blur_dark='10'
+set argon.@global[0].transparency='0.5'
+set argon.@global[0].transparency_dark='0.5'
+set argon.@global[0].mode='normal'
+set argon.@global[0].online_wallpaper='none'
+EOF
+uci commit argon
+
 # ttyd autologin
 #uci set ttyd.@ttyd[0].interface='@lan'
 #uci set ttyd.@ttyd[0].command='/bin/login -f root'
