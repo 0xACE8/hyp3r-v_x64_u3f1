@@ -7,8 +7,14 @@
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.177.80/g' package/base-files/files/bin/config_generate
 
+# Set password to PASSWORD
+sed -i 's/root:::0:99999:7:::/root:$1$4xKZB45Q$w0CPT5M6vBWbYNmSWuxfU.:0:0:99999:7:::/g' package/base-files/files/etc/shadow
+
 # Change language=auto to zh_cn
 sed -i 's/lang="auto"/lang="zh_cn"/g' package/emortal/default-settings/files/99-default-settings
+
+# Change ash to bash
+sed -i 's/ash/bash/g' package/base-files/files/etc/passwd
 
 # Modify Ntp server
 #sed -i 's/ntp.tencent.com/ntp.ntsc.ac.cn/g' package/emortal/default-settings/files/99-default-settings-chinese
@@ -22,10 +28,10 @@ sed -i 's/"Argon 主题设置"/"主题设置"/g' feeds/luci/applications/luci-ap
 rm -rf feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/img
 wget --no-check-certificate -O feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/img "https://raw.githubusercontent.com/0xACE8/hyp3r-v_x64_u3f1/main/bg1.jpg"
 
-sed -i 's/"#5e72e4"/"#bc1142"/g' feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/css/cascade.css
-sed -i 's/"#5e72e4"/"#bc1142"/g' feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/css/dark.css
-sed -i 's/"#483d8b"/"#bc1142"/g' feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/css/cascade.css
-sed -i 's/"#483d8b"/"#bc1142"/g' feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/css/dark.css
+sed -i 's/5e72e4/1c78ff/g' feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/css/cascade.css
+sed -i 's/5e72e4/1c78ff/g' feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/css/dark.css
+sed -i 's/483d8b/1c78ff/g' feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/css/cascade.css
+sed -i 's/483d8b/1c78ff/g' feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/css/dark.css
 
 # ttyd menu name
 sed -i 's/"终端"/"TTYD 终端"/g' feeds/luci/applications/luci-app-ttyd/po/zh_Hans/ttyd.po
