@@ -23,15 +23,15 @@ sed -i 's/ash/bash/g' package/base-files/files/etc/passwd
 #sed -i 's/ntp.tencent.com/ntp.tuna.tsinghua.edu.cn/g' package/emortal/default-settings/files/99-default-settings-chinese
 
 # luci theme argon update
-sed -i 's/"Argon 主题设置"/"主题设置"/g' feeds/luci/applications/luci-app-argon-config/po/zh_Hans/argon-config.po
+sed -i 's/"Argon 主题设置"/"主题设置"/g' feeds/ace8/luci-app-argon-config/po/zh_Hans/argon-config.po
 
-rm -rf feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/img
-wget --no-check-certificate -O feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/img "https://raw.githubusercontent.com/0xACE8/hyp3r-v_x64_u3f1/main/bg1.jpg"
+rm -rf feeds/ace8/luci-theme-argon/htdocs/luci-static/argon/img
+wget --no-check-certificate -O feeds/ace8/luci-theme-argon/htdocs/luci-static/argon/img "https://raw.githubusercontent.com/0xACE8/hyp3r-v_x64_u3f1/main/bg1.jpg"
 
-sed -i 's/5e72e4/1c78ff/g' feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/css/cascade.css
-sed -i 's/5e72e4/1c78ff/g' feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/css/dark.css
-sed -i 's/483d8b/1c78ff/g' feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/css/cascade.css
-sed -i 's/483d8b/1c78ff/g' feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/css/dark.css
+sed -i 's/5e72e4/1c78ff/g' feeds/ace8/luci-theme-argon/htdocs/luci-static/argon/css/cascade.css
+sed -i 's/5e72e4/1c78ff/g' feeds/ace8/luci-theme-argon/htdocs/luci-static/argon/css/dark.css
+sed -i 's/483d8b/1c78ff/g' feeds/ace8/luci-theme-argon/htdocs/luci-static/argon/css/cascade.css
+sed -i 's/483d8b/1c78ff/g' feeds/ace8/luci-theme-argon/htdocs/luci-static/argon/css/dark.css
 
 # ttyd menu name
 sed -i 's/"终端"/"TTYD 终端"/g' feeds/luci/applications/luci-app-ttyd/po/zh_Hans/ttyd.po
