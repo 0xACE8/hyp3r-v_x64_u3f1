@@ -1,5 +1,9 @@
 #!/bin/sh
 
+# luci language
+uci set luci.main.lang=zh_cn
+uci commit luci
+
 # argon
 uci batch <<EOF
 set argon.@global[0].primary='#1c78ff'
@@ -18,22 +22,23 @@ uci commit argon
 #uci set ttyd.@ttyd[0].command='/bin/login -f root'
 #uci commit ttyd
 
-# turboacc bbr_cca is on
-#uci set turboacc.config.bbr_cca='1'
+# turboacc
+#uci batch <<EOF
+#set turboacc.config.bbr_cca='1'
+#set turboacc.config.fullcone6='0'
+#set turboacc.config.hw_wed='0'
+#EOF
 #uci commit turboacc
+
 
 # netspeedtest homebox is on
 uci set netspeedtest.homebox.enabled='1'
 uci set netspeedtest.speedtestiperf3.enabled='1'
 uci commit netspeedtest
 
-# luci language
-# uci set luci.main.lang=zh_cn
-# uci commit luci
-
 # system
 uci batch <<EOF
-set system.@system[0].hostname='Bypass_Router'
+set system.@system[0].hostname='Bypass.Router'
 set system.@system[0].timezone='PST8PDT,M3.2.0,M11.1.0'
 set system.@system[0].zonename='America/Los Angeles'
 delete system.ntp.enable_server
@@ -45,6 +50,7 @@ set system.ntp.use_dhcp='0'
 EOF
 uci commit system
 
+# fix distfeeds
 sed -i "/ace8/d" /etc/opkg/distfeeds.conf
 sed -i "/passwall_packages/d" /etc/opkg/distfeeds.conf
 sed -i "/passwall/d" /etc/opkg/distfeeds.conf
@@ -96,6 +102,7 @@ uci commit dhcp
 uci batch <<EOF
 delete network.lan.ip6assign
 delete network.globals.ula_prefix
+set network.globals.packet_steering='1'
 set network.lan.gateway='192.168.177.1'
 set network.lan.dns='127.0.0.1'
 set network.lan6=interface
