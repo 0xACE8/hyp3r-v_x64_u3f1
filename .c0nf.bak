@@ -1,0 +1,362 @@
+CONFIG_TARGET_x86=y
+CONFIG_TARGET_x86_64=y
+CONFIG_TARGET_x86_64_DEVICE_generic=y
+
+CONFIG_TARGET_KERNEL_PARTSIZE=64
+CONFIG_TARGET_ROOTFS_PARTSIZE=768
+CONFIG_TESTING_KERNEL=y
+CONFIG_LINUX_6_1=y
+CONFIG_ZLIB_OPTIMIZE_SPEED=y
+CONFIG_BIND_ENABLE_DOH=y
+
+CONFIG_PACKAGE_kmod-sound-core=n
+CONFIG_PACKAGE_bnx2-firmware=n
+CONFIG_PACKAGE_kmod-usb-core=n
+CONFIG_PACKAGE_kmod-usb-storage=n
+CONFIG_PACKAGE_kmod-usb-storage-extras=n
+CONFIG_PACKAGE_kmod-usb-storage-uas=n
+
+CONFIG_COREMARK_OPTIMIZE_O3=y
+CONFIG_LIBCURL_COOKIES=y
+CONFIG_LIBCURL_CRYPTO_AUTH=y
+CONFIG_LIBCURL_FILE=y
+CONFIG_LIBCURL_FTP=y
+CONFIG_LIBCURL_HTTP=y
+CONFIG_LIBCURL_MBEDTLS=y
+CONFIG_LIBCURL_NGHTTP2=y
+CONFIG_LIBCURL_NO_SMB="!"
+CONFIG_LIBCURL_PROXY=y
+CONFIG_LIBCURL_TFTP=y
+CONFIG_LIBCURL_THREADED_RESOLVER=y
+CONFIG_LIBCURL_TLS_SRP=y
+CONFIG_LIBCURL_UNIX_SOCKETS=y
+CONFIG_LIBNETTLE_MINI=y
+CONFIG_LUCI_LANG_zh_Hans=y
+CONFIG_MBEDTLS_AES_C=y
+CONFIG_MBEDTLS_CMAC_C=y
+CONFIG_MBEDTLS_DES_C=y
+CONFIG_MBEDTLS_ECP_DP_CURVE25519_ENABLED=y
+CONFIG_MBEDTLS_ECP_DP_SECP256K1_ENABLED=y
+CONFIG_MBEDTLS_ECP_DP_SECP256R1_ENABLED=y
+CONFIG_MBEDTLS_ECP_DP_SECP384R1_ENABLED=y
+CONFIG_MBEDTLS_ENTROPY_FORCE_SHA256=y
+CONFIG_MBEDTLS_GCM_C=y
+CONFIG_MBEDTLS_HAVE_SSE2=y
+CONFIG_MBEDTLS_KEY_EXCHANGE_ECDHE_ECDSA_ENABLED=y
+CONFIG_MBEDTLS_KEY_EXCHANGE_ECDHE_PSK_ENABLED=y
+CONFIG_MBEDTLS_KEY_EXCHANGE_ECDHE_RSA_ENABLED=y
+CONFIG_MBEDTLS_KEY_EXCHANGE_PSK_ENABLED=y
+CONFIG_MBEDTLS_NIST_KW_C=y
+CONFIG_MBEDTLS_RSA_NO_CRT=y
+CONFIG_PACKAGE_autocore=y
+CONFIG_PACKAGE_bash=y
+CONFIG_PACKAGE_bind-dig=y
+CONFIG_PACKAGE_bind-libs=y
+CONFIG_PACKAGE_bind-nslookup=y
+CONFIG_PACKAGE_cgi-io=y
+CONFIG_PACKAGE_coremark=y
+CONFIG_PACKAGE_coreutils-base64=y
+CONFIG_PACKAGE_coreutils-nohup=y
+CONFIG_PACKAGE_coreutils=y
+CONFIG_PACKAGE_curl=y
+CONFIG_PACKAGE_default-settings-chn=y
+CONFIG_PACKAGE_default-settings=y
+CONFIG_PACKAGE_dnscrypt-proxy2=y
+CONFIG_PACKAGE_ethtool=y
+CONFIG_PACKAGE_haproxy=y
+CONFIG_PACKAGE_homebox=y
+CONFIG_PACKAGE_hysteria=y
+CONFIG_PACKAGE_ip-full=y
+CONFIG_PACKAGE_ip6tables-extra=y
+CONFIG_PACKAGE_ip6tables-mod-fullconenat=y
+CONFIG_PACKAGE_ip6tables-mod-nat=y
+CONFIG_PACKAGE_ip6tables-nft=y
+CONFIG_PACKAGE_ip6tables-zz-legacy=y
+CONFIG_PACKAGE_iperf3=y
+CONFIG_PACKAGE_iptables-mod-conntrack-extra=y
+CONFIG_PACKAGE_iptables-mod-extra=y
+CONFIG_PACKAGE_iptables-mod-fullconenat=y
+CONFIG_PACKAGE_iptables-mod-ipopt=y
+CONFIG_PACKAGE_iptables-mod-iprange=y
+CONFIG_PACKAGE_iptables-mod-nat-extra=y
+CONFIG_PACKAGE_iptables-mod-socket=y
+CONFIG_PACKAGE_iptables-mod-tproxy=y
+CONFIG_PACKAGE_iptables-nft=y
+CONFIG_PACKAGE_iptables-zz-legacy=y
+CONFIG_PACKAGE_kcptun-client=y
+CONFIG_PACKAGE_kmod-asn1-decoder=y
+CONFIG_PACKAGE_kmod-crypto-cbc=y
+CONFIG_PACKAGE_kmod-crypto-chacha20poly1305=y
+CONFIG_PACKAGE_kmod-crypto-ctr=y
+CONFIG_PACKAGE_kmod-crypto-gcm=y
+CONFIG_PACKAGE_kmod-crypto-gf128=y
+CONFIG_PACKAGE_kmod-crypto-ghash=y
+CONFIG_PACKAGE_kmod-crypto-hmac=y
+CONFIG_PACKAGE_kmod-crypto-md5=y
+CONFIG_PACKAGE_kmod-crypto-rng=y
+CONFIG_PACKAGE_kmod-crypto-seqiv=y
+CONFIG_PACKAGE_kmod-crypto-sha256=y
+CONFIG_PACKAGE_kmod-crypto-sha512=y
+CONFIG_PACKAGE_kmod-inet-diag=y
+CONFIG_PACKAGE_kmod-ip6-tunnel=y
+CONFIG_PACKAGE_kmod-ip6tables-extra=y
+CONFIG_PACKAGE_kmod-ip6tables=y
+CONFIG_PACKAGE_kmod-ipt-conntrack-extra=y
+CONFIG_PACKAGE_kmod-ipt-conntrack=y
+CONFIG_PACKAGE_kmod-ipt-core=y
+CONFIG_PACKAGE_kmod-ipt-extra=y
+CONFIG_PACKAGE_kmod-ipt-fullconenat=y
+CONFIG_PACKAGE_kmod-ipt-ipopt=y
+CONFIG_PACKAGE_kmod-ipt-iprange=y
+CONFIG_PACKAGE_kmod-ipt-nat-extra=y
+CONFIG_PACKAGE_kmod-ipt-nat6=y
+CONFIG_PACKAGE_kmod-ipt-nat=y
+CONFIG_PACKAGE_kmod-ipt-socket=y
+CONFIG_PACKAGE_kmod-ipt-tproxy=y
+CONFIG_PACKAGE_kmod-iptunnel6=y
+CONFIG_PACKAGE_kmod-lib-textsearch=y
+CONFIG_PACKAGE_kmod-netlink-diag=y
+CONFIG_PACKAGE_kmod-nf-conncount=y
+CONFIG_PACKAGE_kmod-nf-ipt6=y
+CONFIG_PACKAGE_kmod-nf-ipt=y
+CONFIG_PACKAGE_kmod-nf-nat6=y
+CONFIG_PACKAGE_kmod-nf-nathelper-extra=y
+CONFIG_PACKAGE_kmod-nf-nathelper=y
+CONFIG_PACKAGE_kmod-nf-socket=y
+CONFIG_PACKAGE_kmod-nf-tproxy=y
+CONFIG_PACKAGE_kmod-nft-compat=y
+CONFIG_PACKAGE_kmod-nft-fullcone=y
+CONFIG_PACKAGE_kmod-nft-socket=y
+CONFIG_PACKAGE_kmod-nft-tproxy=y
+CONFIG_PACKAGE_kmod-tcp-bbr=y
+CONFIG_PACKAGE_kmod-tun=y
+CONFIG_PACKAGE_libatomic=y
+CONFIG_PACKAGE_libbpf=y
+CONFIG_PACKAGE_libbz2=y
+CONFIG_PACKAGE_libcap-bin-capsh-shell="/bin/sh"
+CONFIG_PACKAGE_libcap-bin=y
+CONFIG_PACKAGE_libcap=y
+CONFIG_PACKAGE_libcurl=y
+CONFIG_PACKAGE_libelf=y
+CONFIG_PACKAGE_libev=y
+CONFIG_PACKAGE_libffi=y
+CONFIG_PACKAGE_libgdbm=y
+CONFIG_PACKAGE_libgmp=y
+CONFIG_PACKAGE_libip4tc=y
+CONFIG_PACKAGE_libip6tc=y
+CONFIG_PACKAGE_libiperf3=y
+CONFIG_PACKAGE_libiptext-nft=y
+CONFIG_PACKAGE_libiptext6=y
+CONFIG_PACKAGE_libiptext=y
+CONFIG_PACKAGE_libiwinfo-data=y
+CONFIG_PACKAGE_libiwinfo=y
+CONFIG_PACKAGE_libltdl=y
+CONFIG_PACKAGE_liblua5.3=y
+CONFIG_PACKAGE_liblua=y
+CONFIG_PACKAGE_liblucihttp-lua=y
+CONFIG_PACKAGE_liblucihttp-ucode=y
+CONFIG_PACKAGE_liblucihttp=y
+CONFIG_PACKAGE_liblzma=y
+CONFIG_PACKAGE_libmbedtls=y
+CONFIG_PACKAGE_libnghttp2=y
+CONFIG_PACKAGE_libpcre2=y
+CONFIG_PACKAGE_libpcre=y
+CONFIG_PACKAGE_libpopt=y
+CONFIG_PACKAGE_libpython3=y
+CONFIG_PACKAGE_libreadline=y
+CONFIG_PACKAGE_libsensors=y
+CONFIG_PACKAGE_libsqlite3=y
+CONFIG_PACKAGE_libstdcpp=y
+CONFIG_PACKAGE_libsysfs=y
+CONFIG_PACKAGE_libubus-lua=y
+CONFIG_PACKAGE_libuci-lua=y
+CONFIG_PACKAGE_libudns=y
+CONFIG_PACKAGE_libuv=y
+CONFIG_PACKAGE_libwebsockets-full=y
+CONFIG_PACKAGE_libxtables=y
+CONFIG_PACKAGE_lm-sensors=y
+CONFIG_PACKAGE_lua=y
+CONFIG_PACKAGE_luci-app-advanced=y
+CONFIG_PACKAGE_luci-app-argon-config=y
+CONFIG_PACKAGE_luci-app-firewall=y
+CONFIG_PACKAGE_luci-app-kcptun=y
+CONFIG_PACKAGE_luci-app-netspeedtest=y
+CONFIG_PACKAGE_luci-app-opkg=y
+CONFIG_PACKAGE_luci-app-passwall2=y
+CONFIG_PACKAGE_luci-app-passwall2_INCLUDE_Hysteria=y
+CONFIG_PACKAGE_luci-app-passwall2_INCLUDE_Shadowsocks_Rust_Client=y
+CONFIG_PACKAGE_luci-app-passwall2_INCLUDE_tuic_client=y
+CONFIG_PACKAGE_luci-app-passwall2_Nftables_Transparent_Proxy=y
+CONFIG_PACKAGE_luci-app-ttyd=y
+CONFIG_PACKAGE_luci-app-turboacc=y
+CONFIG_PACKAGE_luci-app-udp2raw=y
+CONFIG_PACKAGE_luci-app-udpspeeder=y
+CONFIG_PACKAGE_luci-app-vlmcsd=y
+CONFIG_PACKAGE_luci-base=y
+CONFIG_PACKAGE_luci-compat=y
+CONFIG_PACKAGE_luci-i18n-argon-config-zh-cn=y
+CONFIG_PACKAGE_luci-i18n-base-zh-cn=y
+CONFIG_PACKAGE_luci-i18n-firewall-zh-cn=y
+CONFIG_PACKAGE_luci-i18n-kcptun-zh-cn=y
+CONFIG_PACKAGE_luci-i18n-netspeedtest-zh-cn=y
+CONFIG_PACKAGE_luci-i18n-opkg-zh-cn=y
+CONFIG_PACKAGE_luci-i18n-passwall2-zh-cn=y
+CONFIG_PACKAGE_luci-i18n-ttyd-zh-cn=y
+CONFIG_PACKAGE_luci-i18n-turboacc-zh-cn=y
+CONFIG_PACKAGE_luci-i18n-udp2raw-zh-cn=y
+CONFIG_PACKAGE_luci-i18n-udpspeeder-zh-cn=y
+CONFIG_PACKAGE_luci-i18n-vlmcsd-zh-cn=y
+CONFIG_PACKAGE_luci-lib-base=y
+CONFIG_PACKAGE_luci-lib-ip=y
+CONFIG_PACKAGE_luci-lib-ipkg=y
+CONFIG_PACKAGE_luci-lib-jsonc=y
+CONFIG_PACKAGE_luci-lib-nixio=y
+CONFIG_PACKAGE_luci-light=y
+CONFIG_PACKAGE_luci-lua-runtime=y
+CONFIG_PACKAGE_luci-mod-admin-full=y
+CONFIG_PACKAGE_luci-mod-network=y
+CONFIG_PACKAGE_luci-mod-status=y
+CONFIG_PACKAGE_luci-mod-system=y
+CONFIG_PACKAGE_luci-proto-ipv6=y
+CONFIG_PACKAGE_luci-proto-ppp=y
+CONFIG_PACKAGE_luci-theme-alpha=y
+CONFIG_PACKAGE_luci-theme-argon=y
+CONFIG_PACKAGE_luci-theme-bootstrap=y
+CONFIG_PACKAGE_luci=y
+CONFIG_PACKAGE_nano-plus=y
+CONFIG_PACKAGE_netperf=y
+CONFIG_PACKAGE_python3-asyncio=y
+CONFIG_PACKAGE_python3-base=y
+CONFIG_PACKAGE_python3-cgi=y
+CONFIG_PACKAGE_python3-cgitb=y
+CONFIG_PACKAGE_python3-codecs=y
+CONFIG_PACKAGE_python3-ctypes=y
+CONFIG_PACKAGE_python3-dbm=y
+CONFIG_PACKAGE_python3-decimal=y
+CONFIG_PACKAGE_python3-distutils=y
+CONFIG_PACKAGE_python3-email=y
+CONFIG_PACKAGE_python3-light=y
+CONFIG_PACKAGE_python3-logging=y
+CONFIG_PACKAGE_python3-lzma=y
+CONFIG_PACKAGE_python3-multiprocessing=y
+CONFIG_PACKAGE_python3-ncurses=y
+CONFIG_PACKAGE_python3-openssl=y
+CONFIG_PACKAGE_python3-pydoc=y
+CONFIG_PACKAGE_python3-readline=y
+CONFIG_PACKAGE_python3-sqlite3=y
+CONFIG_PACKAGE_python3-unittest=y
+CONFIG_PACKAGE_python3-urllib=y
+CONFIG_PACKAGE_python3-uuid=y
+CONFIG_PACKAGE_python3-xml=y
+CONFIG_PACKAGE_python3=y
+CONFIG_PACKAGE_resolveip=y
+CONFIG_PACKAGE_rpcd-mod-file=y
+CONFIG_PACKAGE_rpcd-mod-iwinfo=y
+CONFIG_PACKAGE_rpcd-mod-luci=y
+CONFIG_PACKAGE_rpcd-mod-rrdns=y
+CONFIG_PACKAGE_rpcd-mod-ucode=y
+CONFIG_PACKAGE_rpcd=y
+CONFIG_PACKAGE_shadowsocks-rust-sslocal=y
+CONFIG_PACKAGE_sing-box=y
+CONFIG_PACKAGE_sysfsutils=y
+CONFIG_PACKAGE_tcping=y
+CONFIG_PACKAGE_tracertools=y
+CONFIG_PACKAGE_ttyd=y
+CONFIG_PACKAGE_tuic-client=y
+CONFIG_PACKAGE_ucode-mod-html=y
+CONFIG_PACKAGE_ucode-mod-lua=y
+CONFIG_PACKAGE_ucode-mod-math=y
+CONFIG_PACKAGE_udp2raw=y
+CONFIG_PACKAGE_UDPspeeder=y
+CONFIG_PACKAGE_uhttpd-mod-ubus=y
+CONFIG_PACKAGE_uhttpd=y
+CONFIG_PACKAGE_unzip=y
+CONFIG_PACKAGE_v2ray-geoip=y
+CONFIG_PACKAGE_v2ray-geosite=y
+CONFIG_PACKAGE_vim-full=y
+CONFIG_PACKAGE_vlmcsd=y
+CONFIG_PACKAGE_wget-ssl=y
+CONFIG_PACKAGE_xray-core=y
+CONFIG_PACKAGE_xtables-legacy=y
+CONFIG_PACKAGE_xtables-nft=y
+CONFIG_PACKAGE_zlib=y
+CONFIG_PCRE2_JIT_ENABLED=y
+CONFIG_PCRE_JIT_ENABLED=y
+CONFIG_SING_BOX_WITH_CLASH_API=y
+CONFIG_SING_BOX_WITH_DHCP=y
+CONFIG_SING_BOX_WITH_ECH=y
+CONFIG_SING_BOX_WITH_QUIC=y
+CONFIG_SING_BOX_WITH_UTLS=y
+CONFIG_SING_BOX_WITH_WIREGUARD=y
+CONFIG_SQLITE3_COLUMN_METADATA=y
+CONFIG_SQLITE3_DYNAMIC_EXTENSIONS=y
+CONFIG_SQLITE3_FTS3=y
+CONFIG_SQLITE3_FTS4=y
+CONFIG_SQLITE3_FTS5=y
+CONFIG_SQLITE3_RTREE=y
+
+# CONFIG_COREMARK_ENABLE_MULTITHREADING is not set
+# CONFIG_GRUB_CONSOLE is not set
+# CONFIG_GRUB_IMAGES is not set
+# CONFIG_PACKAGE_bnx2-firmware is not set
+# CONFIG_PACKAGE_kmod-8139cp is not set
+# CONFIG_PACKAGE_kmod-8139too is not set
+# CONFIG_PACKAGE_kmod-ac97 is not set
+# CONFIG_PACKAGE_kmod-amazon-ena is not set
+# CONFIG_PACKAGE_kmod-amd-xgbe is not set
+# CONFIG_PACKAGE_kmod-bnx2 is not set
+# CONFIG_PACKAGE_kmod-button-hotplug is not set
+# CONFIG_PACKAGE_kmod-crypto-arc4 is not set
+# CONFIG_PACKAGE_kmod-crypto-ecb is not set
+# CONFIG_PACKAGE_kmod-crypto-sha1 is not set
+# CONFIG_PACKAGE_kmod-e1000 is not set
+# CONFIG_PACKAGE_kmod-e1000e is not set
+# CONFIG_PACKAGE_kmod-forcedeth is not set
+# CONFIG_PACKAGE_kmod-hid is not set
+# CONFIG_PACKAGE_kmod-hid-generic is not set
+# CONFIG_PACKAGE_kmod-hwmon-core is not set
+# CONFIG_PACKAGE_kmod-i2c-algo-bit is not set
+# CONFIG_PACKAGE_kmod-i2c-core is not set
+# CONFIG_PACKAGE_kmod-i40e is not set
+# CONFIG_PACKAGE_kmod-igb is not set
+# CONFIG_PACKAGE_kmod-igbvf is not set
+# CONFIG_PACKAGE_kmod-igc is not set
+# CONFIG_PACKAGE_kmod-input-evdev is not set
+# CONFIG_PACKAGE_kmod-ixgbe is not set
+# CONFIG_PACKAGE_kmod-ixgbevf is not set
+# CONFIG_PACKAGE_kmod-ledtrig-audio is not set
+# CONFIG_PACKAGE_kmod-lib-crc-ccitt is not set
+# CONFIG_PACKAGE_kmod-libphy is not set
+# CONFIG_PACKAGE_kmod-macvlan is not set
+# CONFIG_PACKAGE_kmod-mii is not set
+# CONFIG_PACKAGE_kmod-net-selftests is not set
+# CONFIG_PACKAGE_kmod-pcnet32 is not set
+# CONFIG_PACKAGE_kmod-phy-ax88796b is not set
+# CONFIG_PACKAGE_kmod-ppp is not set
+# CONFIG_PACKAGE_kmod-pps is not set
+# CONFIG_PACKAGE_kmod-ptp is not set
+# CONFIG_PACKAGE_kmod-r8101 is not set
+# CONFIG_PACKAGE_kmod-r8125 is not set
+# CONFIG_PACKAGE_kmod-r8168 is not set
+# CONFIG_PACKAGE_kmod-sound-hda-core is not set
+# CONFIG_PACKAGE_kmod-sound-i8x0 is not set
+# CONFIG_PACKAGE_kmod-sound-mpu401 is not set
+# CONFIG_PACKAGE_kmod-sound-via82xx is not set
+# CONFIG_PACKAGE_kmod-tg3 is not set
+# CONFIG_PACKAGE_kmod-tulip is not set
+# CONFIG_PACKAGE_kmod-usb-audio is not set
+# CONFIG_PACKAGE_kmod-usb-hid is not set
+# CONFIG_PACKAGE_kmod-usb-net is not set
+# CONFIG_PACKAGE_kmod-usb-net-asix is not set
+# CONFIG_PACKAGE_kmod-usb-net-asix-ax88179 is not set
+# CONFIG_PACKAGE_kmod-usb-net-rtl8150 is not set
+# CONFIG_PACKAGE_kmod-usb-net-rtl8152-vendor is not set
+# CONFIG_PACKAGE_kmod-vmxnet3 is not set
+# CONFIG_PACKAGE_luci-app-passwall2_INCLUDE_Shadowsocks_Libev_Client is not set
+# CONFIG_PACKAGE_luci-app-passwall2_INCLUDE_ShadowsocksR_Libev_Client is not set
+# CONFIG_PACKAGE_luci-app-passwall2_INCLUDE_Simple_Obfs is not set
+# CONFIG_PACKAGE_luci-app-passwall2_INCLUDE_V2ray_Plugin is not set
+# CONFIG_PACKAGE_ppp is not set
+# CONFIG_PACKAGE_shellsync is not set
+# CONFIG_TARGET_ROOTFS_EXT4FS is not set
+# CONFIG_TARGET_ROOTFS_TARGZ is not set
