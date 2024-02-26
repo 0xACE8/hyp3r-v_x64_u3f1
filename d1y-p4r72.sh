@@ -54,7 +54,7 @@ echo 'net.core.netdev_max_backlog=2048' >>package/base-files/files/etc/sysctl.d/
 # upgrade 99-default-settings-chinese.sh
 rm -rf package/emortal/default-settings/files/99-default-settings-chinese.sh
 wget --no-check-certificate https://raw.githubusercontent.com/0xACE8/hyp3r-v_x64_u3f1/main/99-default-settings-chinese.sh -O package/emortal/default-settings/files/99-default-settings-chinese.sh
-
+rm -rf feeds/passwall_packages/tuic
 # add init settings
 wget --no-check-certificate https://raw.githubusercontent.com/0xACE8/hyp3r-v_x64_u3f1/main/99-init-settings -O package/base-files/files/etc/uci-defaults/99-init-settings
 
